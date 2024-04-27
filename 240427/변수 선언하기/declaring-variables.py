@@ -1,4 +1,4 @@
 a=3
- b='C'
+ b="C"
  print(a)
  print(b)
