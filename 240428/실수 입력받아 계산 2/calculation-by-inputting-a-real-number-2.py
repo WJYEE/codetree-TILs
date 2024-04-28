@@ -1,2 +1,2 @@
 ft = float(input())
-print(f'{a*1.5:.2f}')
+print(f'{ft+1.5:.2f}')
