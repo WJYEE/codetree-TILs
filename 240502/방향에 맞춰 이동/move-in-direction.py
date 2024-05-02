@@ -7,7 +7,7 @@ dir_num = {
     'N':2,
     'E':3
 }
-for _ in range(4):
+for _ in range(n):
     c_dir, dist = tuple(input().split())
     dist = int(dist)
     x+=dx[dir_num[c_dir]]*dist
