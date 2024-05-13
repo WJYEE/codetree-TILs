@@ -1,7 +1,7 @@
 n, t = map(int, input().split())
 r, c, d = map(str, input().split())
 x, y = int(c) - 1, int(r) - 1
-dx, dy = [0, 1, -1, 0], [1, 0, 0, -1]
+dx, dy = [0, 1, -1, 0], [-1, 0, 0, 1]
 direct = {'U': 0, 'R': 1, 'L': 2, 'D': 3}
 dirnum = direct[d]
 
