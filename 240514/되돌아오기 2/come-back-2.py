@@ -14,7 +14,7 @@ for i in range(N):
     time+=1
     if x==0 and y==0:
         break
-if time == N:
+if time > N:
     print(-1)
 else:
     print(time)
