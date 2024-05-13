@@ -1,12 +1,12 @@
 n,m = map(int,input().split())
 answer = [
-    [0] * n
-    for _ in range(m)
+    [0] * m
+    for _ in range(n)
 ]
 
 
 def in_range(y, x):
-    return 0 <= x and x < m and 0 <= y and y < n
+    return 0 <= x and x < n and 0 <= y and y < m
 
 
 dys, dxs = [0, 1, 0, -1], [1, 0, -1, 0]
