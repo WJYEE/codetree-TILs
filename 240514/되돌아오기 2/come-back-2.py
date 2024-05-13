@@ -1,4 +1,4 @@
-x,y = 0
+x,y = 0,0
 string = input()
 N = len(string)
 time = 0
