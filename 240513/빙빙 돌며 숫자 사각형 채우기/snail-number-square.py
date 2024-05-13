@@ -17,7 +17,7 @@ dir_num = 0           # 0: 오른쪽, 1: 아래쪽, 2: 왼쪽, 3: 위쪽
 answer[y][x] = 1
 
 # n*n번 진행합니다.
-for i in range(2, n * n + 1):
+for i in range(2, n * m + 1):
     # 현재 방향 dir를 기준으로 그 다음 위치 값을 계산합니다.
     nx, ny = x + dxs[dir_num], y + dys[dir_num]
     
