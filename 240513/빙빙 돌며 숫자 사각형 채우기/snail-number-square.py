@@ -1,6 +1,6 @@
 n,m = map(int,input().split())
 answer = [
-    [0] * n
+    [0] * m
     for _ in range(n)
 ]
 
