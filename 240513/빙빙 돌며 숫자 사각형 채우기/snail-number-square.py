@@ -5,7 +5,7 @@ answer = [
 ]
 
 
-def in_range(x, y):
+def in_range(y, x):
     return 0 <= x and x < n and 0 <= y and y < n
 
 
@@ -32,6 +32,6 @@ for i in range(2, n * n + 1):
 
 # 출력:
 for i in range(n):
-    for j in range(n):
+    for j in range(m):
         print(answer[i][j], end = ' ')
     print()
