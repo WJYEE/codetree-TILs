@@ -11,8 +11,10 @@ for _ in range(t):
     
     # 다음 위치가 격자 범위를 벗어나는지 확인
     if not (0 <= nx < n and 0 <= ny < n):
-        t -= 1
+        # 벽에 부딪히면 방향을 바꿔서 이동
         dirnum = 3 - dirnum
+        t-=1
+    
     else:
         x, y = nx, ny
 
