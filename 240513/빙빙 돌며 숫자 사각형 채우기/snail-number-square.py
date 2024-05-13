@@ -6,7 +6,7 @@ answer = [
 
 
 def in_range(y, x):
-    return 0 <= x and x < n and 0 <= y and y < m
+    return 0 <= y < n and 0 <= x < m
 
 
 dys, dxs = [0, 1, 0, -1], [1, 0, -1, 0]
