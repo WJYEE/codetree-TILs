@@ -9,5 +9,6 @@ for y in range(N-2):
                 cnt+=grid[j][i]
         if cnt>m_cnt:
             m_cnt=cnt
+            cnt=0
 
 print(m_cnt)
