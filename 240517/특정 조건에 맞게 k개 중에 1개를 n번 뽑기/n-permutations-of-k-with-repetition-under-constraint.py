@@ -5,7 +5,7 @@ def f(curr):
         print(*answer)
         return
     for v in range(1,K+1):
-        if answer.count(v) < 3:
+        if len(answer) < 2 or not (answer[-1] == answer[-2] == v):
             answer.append(v)
             f(curr+1)
             answer.pop()
