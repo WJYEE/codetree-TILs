@@ -11,9 +11,8 @@ visited = [
     [False for _ in range(m)]
     for _ in range(n)
 ]
-order = 1
-# n:행개수, m:열개수
 
+# n:행개수, m:열개수
 
 def in_range(x,y):
     return 0<=x<=m-1 and 0<=y<=n-1
@@ -32,15 +31,10 @@ def dfs(x,y):
 
     for dx,dy in zip(dxs,dys):
         new_x,new_y = x+dx, y+dy
-
         if can_go(new_x,new_y):
-            answer[new_x][new_y] = order
-            order+=1
             visited[new_x][new_y] = True
             dfs(new_x,new_y)
             
-answer[0][0] = order
-order += 1
 visited[0][0] = True
 dfs(0,0)
 
