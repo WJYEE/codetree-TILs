@@ -15,7 +15,7 @@ visited = [
 # n:행개수, m:열개수
 
 def in_range(x,y):
-    return 0<=x<=m-1 and 0<=y<=n-1
+    return 0<=x<=n-1 and 0<=y<=m-1
 
 def can_go(x,y):
     if not in_range(x,y):
